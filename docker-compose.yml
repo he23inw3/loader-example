@@ -41,7 +41,7 @@ services:
     volumes:
       - ./config/gcp/cloud-storage/data:/data/test
       - ./config/gcp/cloud-storage/storage:/storage
-    command: -scheme http -public-host localhost:4000
+    command: -scheme http -public-host ${URL:-localhost}:4443
 
 volumes:
   database:
