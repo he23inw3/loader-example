@@ -4,6 +4,7 @@ spring:
   main:
     banner-mode: off
     log-startup-info: false
+    web-application-type: none
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: ${DATABASE_URL}
