@@ -7,7 +7,6 @@ import com.example.loaderexample.util.ConfigUtil
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.config.AutowireCapableBeanFactory
 import org.springframework.boot.CommandLineRunner
-import org.springframework.lang.NonNull
 import org.springframework.stereotype.Component
 import java.io.IOException
 import kotlin.system.exitProcess
@@ -24,7 +23,7 @@ class JobRunner(
 		private const val DEFAULT_JOB_ID = "BE-BATCH000"
 	}
 
-	override fun run(@NonNull vararg args: String?) {
+	override fun run(vararg args: String?) {
 		var jobId = ""
 		var jobName = ""
 		var status = JobStatus.FAILED
